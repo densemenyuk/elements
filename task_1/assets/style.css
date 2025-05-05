@@ -21,14 +21,37 @@
   width: 600px;
   border-radius: 5px;
   border: 2px solid #dedede;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .sorting-list {
   list-style: none;
   font-weight: 500;
   display: flex;
+  border: 3px solid #73b9ff;
+  border-radius: 4px;
+  width: 80%;
+  height: 50px;
 }
 
-.sorting-item {
-    border: 2px solid #73b9ff;
+.button-item {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  width: 100%;
+  border-right: 3px solid #73b9ff;
+}
+
+.button-item:nth-child(3n){
+    border: none;
+} 
+
+.button-item:hover {
+  cursor: pointer;
+  background-color: #d8e7f8;
 }
